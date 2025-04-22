@@ -71,10 +71,10 @@ void modbus_ProcessData(modbus_t *pInstance)
 
 //------------------------------------------------------------------------------
 //
-void modbus_SetExceptionResponse(uint8_t exceptionCode, modbus_Pdu_t *pResponsePdu)
+void modbus_SetExceptionResponse(modbus_Exception_e exceptionCode, modbus_Pdu_t *pResponsePdu)
 {
 	pResponsePdu->functionCode |= 0x80;
-	pResponsePdu->pPayload[0] = exceptionCode;
+	pResponsePdu->pPayload[0] = (uint8_t)exceptionCode;
 	pResponsePdu->payloadSize = 1;
 }
 

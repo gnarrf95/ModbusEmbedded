@@ -54,7 +54,7 @@ typedef struct
 
 void modbus_ProcessData(modbus_t *pInstance);
 
-void modbus_SetExceptionResponse(uint8_t exceptionCode, modbus_Pdu_t *pResponsePdu);
+void modbus_SetExceptionResponse(modbus_Exception_e exceptionCode, modbus_Pdu_t *pResponsePdu);
 
 uint16_t modbus_EncodeAscii(char *pBuffer, uint16_t bufferSize, modbus_Pdu_t *pPdu);
 bool modbus_DecodeAscii(const char *pData, uint16_t dataSize, modbus_Pdu_t *pPdu);
