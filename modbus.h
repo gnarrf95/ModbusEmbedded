@@ -3,9 +3,9 @@
 #define __INCLUDE_MODBUS_H
 
 #include <stdbool.h>
-#include <modbus_defs.h>
-#include <modbus_function.h>
-#include <modbus_exception.h>
+#include <ModbusEmbedded/modbus_defs.h>
+#include <ModbusEmbedded/modbus_function.h>
+#include <ModbusEmbedded/modbus_exception.h>
 
 #ifdef __cplusplus
 extern "C" {

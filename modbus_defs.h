@@ -3,7 +3,7 @@
 #define __INCLUDE_MODBUS_DEFS_H
 
 #include <stdint.h>
-#include <modbus_function.h>
+#include <ModbusEmbedded/modbus_function.h>
 
 #ifdef __cplusplus
 extern "C" {

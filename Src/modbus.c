@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stddef.h>
 
-#include <modbus.h>
-#include <modbus_function.h>
-#include <modbus_exception.h>
+#include <ModbusEmbedded/modbus.h>
+#include <ModbusEmbedded/modbus_function.h>
+#include <ModbusEmbedded/modbus_exception.h>
 
 
 
